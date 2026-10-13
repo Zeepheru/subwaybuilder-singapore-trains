@@ -25,7 +25,7 @@ Main train/track types
 
 Except for _MRT Light_ and _LRT_, the default trains are have 4 doors per side, with 5-door variants for the driverless trains (as found in Singapore).
 
-For all trains, nearly all statistics that are accepted by Subway Builder's [train type modding API (Beta)](https://www.subwaybuilder.com/docs/beta/api-reference/trains) are included. These include features that are **not currently used** in the stable version of the game, like track cant, train car doors, numbers of seats, visually rendered catenary, etc.
+For all trains, most properties that are accepted by Subway Builder's [train type modding API (Beta)](https://www.subwaybuilder.com/docs/beta/api-reference/trains) are included. These include features that are **not currently used** in the stable version of the game, like track cant, train car doors, numbers of seats, visually rendered catenary, etc. _Not include however, are the features that concern trains running between different track as part of their normal schedule (station compatibility, per-track operational costs), track conversions, and acceleration curves._
 
 | Ingame Name                          | id                   | Real-life lines                                                                                          |
 | ------------------------------------ | -------------------- | -------------------------------------------------------------------------------------------------------- |
@@ -198,7 +198,7 @@ Notes:
 - Absolute design maximums are used, with the _desirable_ maximums (especially under certain conditions) typically lower.
 - Curved platforms are not desired (none are found on the real-life network).
 - _MRT Small_: No official values, estimated.
-- _LRT_ cant: only angles are mentioned in the guidelines due to the use of guideways for rubber-wheeled units. Here, heights are calculated using standard gauge track (1435 mm).
+- _LRT_ cant: only angles are mentioned in the guidelines due to the use of guideways for rubber-wheeled units. Here, Here, heights are calculated using those angles with standard gauge track (1435 mm).
 - Track clearance & track spacing: estimated from Subway Builder values.
 
 ### Initial Costs
@@ -215,9 +215,12 @@ Notes:
 | MRT Small                      | 1.9     | 28        | 50          | 14            |
 | LRT                            | 1       | 20        | 15          | 5             |
 
-No custom cost modifiers (for _elevated, ramp, at grade, cut and cover, etc._) are used.
-
 All costs are guesstimated, very roughly balanced based on the vanilla trains.
+
+Notes:
+
+- No custom cost modifiers (for _elevated, ramp, at grade, cut and cover, etc._) are used.
+- Scissor crossover cost is deprecated in the Beta.
 
 <img alt="Rolling Stock Procurement Contract Costs" src="./images/procurement_costs.png" height="250">
 
