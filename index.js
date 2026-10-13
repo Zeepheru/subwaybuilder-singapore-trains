@@ -2,10 +2,7 @@
 window.SubwayBuilderAPI.trains.registerTrainType({
   "id":"sin-mrt-3r-classic",
   "name":"MRT Classic 3rd Rail (SIN)",
-  "description":[
-    "Metro train for an older network upgraded to 21st century standards",
-    " with automated operation and platform screen doors."
-  ],
+  "description":"Metro train for an older network upgraded to modern standards, with CBTC, automated operation, and platform screen doors.",
   "stats":{
     "minCars":3,
     "maxCars":8,
@@ -24,7 +21,7 @@ window.SubwayBuilderAPI.trains.registerTrainType({
     "yardSpeedLimit":4.166666666666667,
     "stopTimeSeconds":30,
     "turnaroundTimeSeconds":60,
-    "tphLimit":32,
+    "tphLimit":36,
     "maxCantMm":150,
     "maxCantDeficiencyMm":110,
     "maxSlopePercentage":3.5,
@@ -40,8 +37,8 @@ window.SubwayBuilderAPI.trains.registerTrainType({
     "carOperationalCostPerHour":30,
     "trackMaintenanceCostPerMeter":360,
     "stationMaintenanceCostPerYear":320000.0,
-    "minStationLength":69,
-    "maxStationLength":184
+    "minStationLength":73,
+    "maxStationLength":188
   },
   "compatibleTrackTypes":[
     "sin-mrt-3r-classic",
@@ -50,7 +47,7 @@ window.SubwayBuilderAPI.trains.registerTrainType({
   "appearance":{
     "color":"#FFFFFF",
     "roofStyle":"rounded",
-    "couplerWidthMultiplier":1.5,
+    "couplerWidthMultiplier":1.4,
     "catenary":false
   },
   "allowGradeCrossing":false,
@@ -80,7 +77,7 @@ window.SubwayBuilderAPI.trains.registerTrainType({
     "yardSpeedLimit":4.166666666666667,
     "stopTimeSeconds":30,
     "turnaroundTimeSeconds":60,
-    "tphLimit":32,
+    "tphLimit":40,
     "maxCantMm":150,
     "maxCantDeficiencyMm":110,
     "maxSlopePercentage":3.5,
@@ -96,8 +93,8 @@ window.SubwayBuilderAPI.trains.registerTrainType({
     "carOperationalCostPerHour":30,
     "trackMaintenanceCostPerMeter":360,
     "stationMaintenanceCostPerYear":320000.0,
-    "minStationLength":69,
-    "maxStationLength":184
+    "minStationLength":73,
+    "maxStationLength":188
   },
   "compatibleTrackTypes":[
     "sin-mrt-3r",
@@ -107,7 +104,7 @@ window.SubwayBuilderAPI.trains.registerTrainType({
   "appearance":{
     "color":"#FFFFFF",
     "roofStyle":"boxy",
-    "couplerWidthMultiplier":1.5,
+    "couplerWidthMultiplier":1.4,
     "catenary":false
   },
   "allowGradeCrossing":false,
@@ -118,10 +115,7 @@ window.SubwayBuilderAPI.trains.registerTrainType({
 window.SubwayBuilderAPI.trains.registerTrainType({
   "id":"sin-mrt-3r-5d",
   "name":"MRT Driverless 3rd Rail 5-door (SIN)",
-  "description":[
-    "Modern driverless metro train",
-    " 5-door variant."
-  ],
+  "description":"Modern driverless metro train, 5-door variant.",
   "stats":{
     "minCars":3,
     "maxCars":8,
@@ -140,7 +134,7 @@ window.SubwayBuilderAPI.trains.registerTrainType({
     "yardSpeedLimit":4.166666666666667,
     "stopTimeSeconds":30,
     "turnaroundTimeSeconds":60,
-    "tphLimit":32,
+    "tphLimit":40,
     "maxCantMm":150,
     "maxCantDeficiencyMm":110,
     "maxSlopePercentage":3.5,
@@ -156,8 +150,8 @@ window.SubwayBuilderAPI.trains.registerTrainType({
     "carOperationalCostPerHour":30,
     "trackMaintenanceCostPerMeter":360,
     "stationMaintenanceCostPerYear":320000.0,
-    "minStationLength":69,
-    "maxStationLength":184
+    "minStationLength":73,
+    "maxStationLength":188
   },
   "compatibleTrackTypes":[
     "sin-mrt-3r-5d",
@@ -177,7 +171,7 @@ window.SubwayBuilderAPI.trains.registerTrainType({
 });
 window.SubwayBuilderAPI.trains.registerTrainType({
   "id":"sin-mrt-oh",
-  "name":"MRT Driverless Overhead Power (SIN)",
+  "name":"MRT Driverless OH (SIN)",
   "description":"Modern driverless metro train using overhead power.",
   "stats":{
     "minCars":3,
@@ -197,7 +191,7 @@ window.SubwayBuilderAPI.trains.registerTrainType({
     "yardSpeedLimit":4.166666666666667,
     "stopTimeSeconds":30,
     "turnaroundTimeSeconds":60,
-    "tphLimit":32,
+    "tphLimit":40,
     "maxCantMm":150,
     "maxCantDeficiencyMm":110,
     "maxSlopePercentage":3.5,
@@ -213,8 +207,8 @@ window.SubwayBuilderAPI.trains.registerTrainType({
     "carOperationalCostPerHour":30,
     "trackMaintenanceCostPerMeter":370,
     "stationMaintenanceCostPerYear":320000.0,
-    "minStationLength":69,
-    "maxStationLength":184
+    "minStationLength":73,
+    "maxStationLength":188
   },
   "compatibleTrackTypes":[
     "sin-mrt-oh",
@@ -224,7 +218,7 @@ window.SubwayBuilderAPI.trains.registerTrainType({
   "appearance":{
     "color":"#FFFFFF",
     "roofStyle":"boxy",
-    "couplerWidthMultiplier":1.5,
+    "couplerWidthMultiplier":1.4,
     "catenary":true
   },
   "allowGradeCrossing":false,
@@ -234,11 +228,8 @@ window.SubwayBuilderAPI.trains.registerTrainType({
 });
 window.SubwayBuilderAPI.trains.registerTrainType({
   "id":"sin-mrt-oh-5d",
-  "name":"MRT Driverless Overhead Power 5-door (SIN)",
-  "description":[
-    "Modern driverless metro train using overhead power",
-    " 5-door variant."
-  ],
+  "name":"MRT Driverless OH 5-door (SIN)",
+  "description":"Modern driverless metro train using overhead power, 5-door variant.",
   "stats":{
     "minCars":3,
     "maxCars":8,
@@ -257,7 +248,7 @@ window.SubwayBuilderAPI.trains.registerTrainType({
     "yardSpeedLimit":4.166666666666667,
     "stopTimeSeconds":30,
     "turnaroundTimeSeconds":60,
-    "tphLimit":32,
+    "tphLimit":40,
     "maxCantMm":150,
     "maxCantDeficiencyMm":110,
     "maxSlopePercentage":3.5,
@@ -273,8 +264,8 @@ window.SubwayBuilderAPI.trains.registerTrainType({
     "carOperationalCostPerHour":30,
     "trackMaintenanceCostPerMeter":370,
     "stationMaintenanceCostPerYear":320000.0,
-    "minStationLength":69,
-    "maxStationLength":184
+    "minStationLength":73,
+    "maxStationLength":188
   },
   "compatibleTrackTypes":[
     "sin-mrt-oh-5d",
@@ -314,15 +305,15 @@ window.SubwayBuilderAPI.trains.registerTrainType({
     "yardSpeedLimit":4.166666666666667,
     "stopTimeSeconds":30,
     "turnaroundTimeSeconds":60,
-    "tphLimit":32,
+    "tphLimit":40,
     "maxCantMm":150,
     "maxCantDeficiencyMm":110,
     "maxSlopePercentage":4.5,
     "minTurnRadius":150,
     "minStationTurnRadius":300,
-    "parallelTrackSpacing":3.6,
+    "parallelTrackSpacing":3.7,
     "trackClearance":1,
-    "carCost":2300000.0,
+    "carCost":1900000.0,
     "baseTrackCost":28000.0,
     "baseStationCost":50000000.0,
     "scissorsCrossoverCost":14000000.0,
@@ -330,8 +321,8 @@ window.SubwayBuilderAPI.trains.registerTrainType({
     "carOperationalCostPerHour":25,
     "trackMaintenanceCostPerMeter":280,
     "stationMaintenanceCostPerYear":260000.0,
-    "minStationLength":56,
-    "maxStationLength":149
+    "minStationLength":60,
+    "maxStationLength":153
   },
   "compatibleTrackTypes":[
     "sim-mrt-small",
@@ -340,7 +331,7 @@ window.SubwayBuilderAPI.trains.registerTrainType({
   "appearance":{
     "color":"#FFFFFF",
     "roofStyle":"boxy",
-    "couplerWidthMultiplier":1.6,
+    "couplerWidthMultiplier":1.5,
     "catenary":false
   },
   "allowGradeCrossing":false,
@@ -370,7 +361,7 @@ window.SubwayBuilderAPI.trains.registerTrainType({
     "yardSpeedLimit":4.166666666666667,
     "stopTimeSeconds":30,
     "turnaroundTimeSeconds":60,
-    "tphLimit":32,
+    "tphLimit":30,
     "maxCantMm":210,
     "maxCantDeficiencyMm":125,
     "maxSlopePercentage":6,
@@ -386,8 +377,8 @@ window.SubwayBuilderAPI.trains.registerTrainType({
     "carOperationalCostPerHour":15,
     "trackMaintenanceCostPerMeter":200,
     "stationMaintenanceCostPerYear":160000.0,
-    "minStationLength":12,
-    "maxStationLength":48
+    "minStationLength":16,
+    "maxStationLength":52
   },
   "compatibleTrackTypes":[
     "sin-lrt",

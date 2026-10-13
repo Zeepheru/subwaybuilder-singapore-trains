@@ -31,10 +31,10 @@ ADDITIONAL_VALUES = {
     "name": lambda row: row["name"] + " (SIN)",
     "minStationLength": lambda row: int(
         math.ceil(int(row["minCars"]) * float(row["carLength"]))
-    ),
+    ) + 4, # why does this +4 have to exist (there's a 4m buffer for some reason ingame)
     "maxStationLength": lambda row: int(
         math.ceil(int(row["maxCars"]) * float(row["carLength"]))
-    ),
+    ) + 4,
     "compatibleTrackTypes": process_track_types,
 }
 
@@ -107,8 +107,8 @@ def auto_convert_str_to_type(value: str):
     if value == "":
         return ""
 
-    if "," in value:
-        return list(value.split(","))
+    if ";" in value:
+        return list(value.split(";"))
 
     try:
         return int(value)

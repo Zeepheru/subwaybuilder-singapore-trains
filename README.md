@@ -14,42 +14,42 @@ Main train/track types
 
 - **MRT Classic 3rd Rail (SIN)**: _Metro train for an older network upgraded to modern standards, with CBTC, automated operation, and platform screen doors._
 - **MRT Driverless 3rd Rail (SIN)**: _Modern driverless metro train._
-- **MRT Driverless Overhead Power (SIN)**: _Modern driverless metro train using overhead power._
+- **MRT Driverless OH (SIN)**: _Modern driverless metro train using overhead power._
 - **MRT Light (SIN)**: _Smaller-profile driverless metro train designed for the tight curves of an elevated rail network._
 - **LRT (SIN)**: _Rubber-tired automated people mover meant for local connectivity in dense residential estates._
 
 5-door variants
 
 - **MRT Driverless 3rd Rail, 5-door (SIN)**: _Modern driverless metro train, 5-door variant._
-- **MRT Driverless Overhead Power, 5-door (SIN)**: _Modern driverless metro train using overhead power, 5-door variant._
+- **MRT Driverless OH, 5-door (SIN)**: _Modern driverless metro train using overhead power, 5-door variant._
 
 Except for _MRT Light_ and _LRT_, the default trains are have 4 doors per side, with 5-door variants for the driverless trains (as found in Singapore).
 
 For all trains, nearly all statistics that are accepted by Subway Builder's [modding API](https://www.subwaybuilder.com/docs/api-reference/trains) are included. These include features that are **not currently used** in the stable version of the game, like track cant, train car doors, numbers of seats, visually rendered catenary, etc.
 
-| Ingame Name                                | id                   | Real-life lines                                                                                          |
-| ------------------------------------------ | -------------------- | -------------------------------------------------------------------------------------------------------- |
-| MRT Classic 3rd Rail (SIN)                 | `sin-mrt-3r-classic` | ![NSL](./images/icons/NSL.png) ![EWL](./images/icons/EWL.png)                                            |
-| MRT Driverless 3rd Rail (SIN)              | `sin-mrt-3r`         | ![CCL](./images/icons/CCL.png) ![DTL](./images/icons/DTL.png)                                            |
-| MRT Driverless 3rd Rail 5-door (SIN)       | `sin-mrt-3r-5d`      | ![TEL](./images/icons/TEL.png)                                                                           |
-| MRT Driverless Overhead Power (SIN)        | `sin-mrt-oh`         | ![NEL](./images/icons/NEL.png)                                                                           |
-| MRT Driverless Overhead Power 5-door (SIN) | `sin-mrt-oh-5d`      | ![CRL](./images/icons/CRL.png)                                                                           |
-| MRT Small (SIN)                            | `sim-mrt-small`      | ![JRL](./images/icons/JRL.png)                                                                           |
-| LRT (SIN)                                  | `sin-lrt`            | ![BPLRT](./images/icons/BPLRT.png) ![SKLRT](./images/icons/SKLRT.png) ![PGLRT](./images/icons/PGLRT.png) |
+| Ingame Name                          | id                   | Real-life lines                                                                                          |
+| ------------------------------------ | -------------------- | -------------------------------------------------------------------------------------------------------- |
+| MRT Classic 3rd Rail (SIN)           | `sin-mrt-3r-classic` | ![NSL](./images/icons/NSL.png) ![EWL](./images/icons/EWL.png)                                            |
+| MRT Driverless 3rd Rail (SIN)        | `sin-mrt-3r`         | ![CCL](./images/icons/CCL.png) ![DTL](./images/icons/DTL.png)                                            |
+| MRT Driverless 3rd Rail 5-door (SIN) | `sin-mrt-3r-5d`      | ![TEL](./images/icons/TEL.png)                                                                           |
+| MRT Driverless OH (SIN)              | `sin-mrt-oh`         | ![NEL](./images/icons/NEL.png)                                                                           |
+| MRT Driverless OH 5-door (SIN)       | `sin-mrt-oh-5d`      | ![CRL](./images/icons/CRL.png)                                                                           |
+| MRT Small (SIN)                      | `sim-mrt-small`      | ![JRL](./images/icons/JRL.png)                                                                           |
+| LRT (SIN)                            | `sin-lrt`            | ![BPLRT](./images/icons/BPLRT.png) ![SKLRT](./images/icons/SKLRT.png) ![PGLRT](./images/icons/PGLRT.png) |
 
 ## Detailed Information
 
 ### [BETA] Track Compatibility
 
-| Name                                 | id                   | Compatible Vanilla Track | Compatible Mod Track |
-| ------------------------------------ | -------------------- | ------------------------ | -------------------- |
-| MRT Classic 3rd Rail                 | `sin-mrt-3r-classic` | `heavy-metro`            |                      |
-| MRT Driverless 3rd Rail              | `sin-mrt-3r`         | `heavy-metro`            | `sin-mrt-3r-5d`      |
-| MRT Driverless 3rd Rail 5-door       | `sin-mrt-3r-5d`      | `heavy-metro`            | `sin-mrt-3r`         |
-| MRT Driverless Overhead Power        | `sin-mrt-oh`         | `heavy-metro`            | `sin-mrt-oh-5d`      |
-| MRT Driverless Overhead Power 5-door | `sin-mrt-oh-5d`      | `heavy-metro`            | `sin-mrt-oh`         |
-| MRT Small                            | `sim-mrt-small`      | `light-metro`            |                      |
-| LRT                                  | `sin-lrt`            | `light-rail`             |                      |
+| Name                           | id                   | Compatible Vanilla Track | Compatible Mod Track |
+| ------------------------------ | -------------------- | ------------------------ | -------------------- |
+| MRT Classic 3rd Rail           | `sin-mrt-3r-classic` | `heavy-metro`            |                      |
+| MRT Driverless 3rd Rail        | `sin-mrt-3r`         | `heavy-metro`            | `sin-mrt-3r-5d`      |
+| MRT Driverless 3rd Rail 5-door | `sin-mrt-3r-5d`      | `heavy-metro`            | `sin-mrt-3r`         |
+| MRT Driverless OH              | `sin-mrt-oh`         | `heavy-metro`            | `sin-mrt-oh-5d`      |
+| MRT Driverless OH 5-door       | `sin-mrt-oh-5d`      | `heavy-metro`            | `sin-mrt-oh`         |
+| MRT Small                      | `sim-mrt-small`      | `light-metro`            |                      |
+| LRT                            | `sin-lrt`            | `light-rail`             |                      |
 
 This means that, should you be playing on a Beta build of the game, you can run the mod's trains on their corresponding
 vanilla trackage, and interrun selected pairs of modded trains.
@@ -86,15 +86,15 @@ Apart from the built infrastructure, there technically isn't a reason for any of
 
 ### Train Cars
 
-| Name                                 | Dimensions (m) | Doors/side | Capacity | Seats |
-| ------------------------------------ | -------------- | ---------- | -------- | ----- |
-| MRT Classic 3rd Rail                 | 23 x 3.2       | 4          | 320      | 42    |
-| MRT Driverless 3rd Rail              | 23 x 3.2       | 4          | 320      | 46    |
-| MRT Driverless 3rd Rail 5-door       | 23 x 3.2       | 5          | 320      | 40    |
-| MRT Driverless Overhead Power        | 23 x 3.2       | 4          | 320      | 46    |
-| MRT Driverless Overhead Power 5-door | 23 x 3.2       | 5          | 320      | 40    |
-| MRT Small                            | 18.6 x 2.75    | 3          | 150      | 32    |
-| LRT [a]                              | 11.8 x 2.69    | 2          | 105      | 18    |
+| Name                           | Dimensions (m) | Doors/side | Capacity | Seats |
+| ------------------------------ | -------------- | ---------- | -------- | ----- |
+| MRT Classic 3rd Rail           | 23 x 3.2       | 4          | 320      | 42    |
+| MRT Driverless 3rd Rail        | 23 x 3.2       | 4          | 320      | 46    |
+| MRT Driverless 3rd Rail 5-door | 23 x 3.2       | 5          | 320      | 40    |
+| MRT Driverless OH              | 23 x 3.2       | 4          | 320      | 46    |
+| MRT Driverless OH 5-door       | 23 x 3.2       | 5          | 320      | 40    |
+| MRT Small                      | 18.6 x 2.75    | 3          | 150      | 32    |
+| LRT [a]                        | 11.8 x 2.69    | 2          | 105      | 18    |
 
 Notes:
 
@@ -127,15 +127,15 @@ Notes on Passenger Capacity:
 
 ### Performance
 
-| Name                                 | Max Speed (kph) | Station Speed (kph) | Crossover Speed (kph) | Yard Speed (kph) |
-| ------------------------------------ | --------------- | ------------------- | --------------------- | ---------------- |
-| MRT Classic 3rd Rail                 | 70              | 70                  | 25                    | 15               |
-| MRT Driverless 3rd Rail              | 80              | 80                  | 25                    | 15               |
-| MRT Driverless 3rd Rail 5-door       | 80 [b]          | 80                  | 25                    | 15               |
-| MRT Driverless Overhead Power        | 90              | 90                  | 25                    | 15               |
-| MRT Driverless Overhead Power 5-door | 90              | 90                  | 25                    | 15               |
-| MRT Small                            | 70              | 70                  | 25                    | 15               |
-| LRT                                  | 70              | 40                  | 25                    | 15               |
+| Name                           | Max Speed (kph) | Station Speed (kph) | Crossover Speed (kph) | Yard Speed (kph) |
+| ------------------------------ | --------------- | ------------------- | --------------------- | ---------------- |
+| MRT Classic 3rd Rail           | 70              | 70                  | 25                    | 15               |
+| MRT Driverless 3rd Rail        | 80              | 80                  | 25                    | 15               |
+| MRT Driverless 3rd Rail 5-door | 80 [b]          | 80                  | 25                    | 15               |
+| MRT Driverless OH              | 90              | 90                  | 25                    | 15               |
+| MRT Driverless OH 5-door       | 90              | 90                  | 25                    | 15               |
+| MRT Small                      | 70              | 70                  | 25                    | 15               |
+| LRT                            | 70              | 40                  | 25                    | 15               |
 
 Notes:
 
@@ -150,15 +150,15 @@ Notes:
 | MRT Small      | 1.2                     | 1.3                     | 1.0                             |
 | LRT            | 1.0                     | 1.0                     | 1.0                             |
 
-| Name                                 | Stop Time (s) | Turnaround Time (s) | TPH Limit |
-| ------------------------------------ | ------------- | ------------------- | --------- |
-| MRT Classic 3rd Rail                 | 30            | 60                  | 36        |
-| MRT Driverless 3rd Rail              | 30            | 60                  | 40        |
-| MRT Driverless 3rd Rail 5-door       | 30            | 60                  | 40        |
-| MRT Driverless Overhead Power        | 30            | 60                  | 40        |
-| MRT Driverless Overhead Power 5-door | 30            | 60                  | 40        |
-| MRT Small                            | 30            | 60                  | 40        |
-| LRT                                  | 30            | 60                  | 30        |
+| Name                           | Stop Time (s) | Turnaround Time (s) | TPH Limit |
+| ------------------------------ | ------------- | ------------------- | --------- |
+| MRT Classic 3rd Rail           | 30            | 60                  | 36        |
+| MRT Driverless 3rd Rail        | 30            | 60                  | 40        |
+| MRT Driverless 3rd Rail 5-door | 30            | 60                  | 40        |
+| MRT Driverless OH              | 30            | 60                  | 40        |
+| MRT Driverless OH 5-door       | 30            | 60                  | 40        |
+| MRT Small                      | 30            | 60                  | 40        |
+| LRT                            | 30            | 60                  | 30        |
 
 Notes on TPH limit:
 
@@ -205,15 +205,15 @@ Notes:
 
 (Infrastructure costs are "Base" costs)
 
-| Name                                 | Car (M) | Track (k) | Station (M) | Crossover (M) |
-| ------------------------------------ | ------- | --------- | ----------- | ------------- |
-| MRT Classic 3rd Rail                 | 2.9     | 30        | 65          | 15            |
-| MRT Driverless 3rd Rail              | 3.0     | 30        | 70          | 15            |
-| MRT Driverless 3rd Rail 5-door       | 3.1     | 30        | 70          | 15            |
-| MRT Driverless Overhead Power        | 3.1     | 32        | 70          | 16            |
-| MRT Driverless Overhead Power 5-door | 3.2     | 32        | 70          | 16            |
-| MRT Small                            | 2.3     | 28        | 50          | 14            |
-| LRT                                  | 1       | 20        | 15          | 5             |
+| Name                           | Car (M) | Track (k) | Station (M) | Crossover (M) |
+| ------------------------------ | ------- | --------- | ----------- | ------------- |
+| MRT Classic 3rd Rail           | 2.9     | 30        | 65          | 15            |
+| MRT Driverless 3rd Rail        | 3.0     | 30        | 70          | 15            |
+| MRT Driverless 3rd Rail 5-door | 3.1     | 30        | 70          | 15            |
+| MRT Driverless OH              | 3.1     | 32        | 70          | 16            |
+| MRT Driverless OH 5-door       | 3.2     | 32        | 70          | 16            |
+| MRT Small                      | 1.9     | 28        | 50          | 14            |
+| LRT                            | 1       | 20        | 15          | 5             |
 
 No custom cost modifiers (for _elevated, ramp, at grade, cut and cover, etc._) are used.
 
@@ -225,15 +225,15 @@ Looking at actual rolling stock procurement contracts is not very helpful.
 
 ### Operating Costs
 
-| Name                                 | Train/h | Car/h | track/m | station/yr (k) |
-| ------------------------------------ | ------- | ----- | ------- | -------------- |
-| MRT Classic 3rd Rail                 | 270     | 30    | 360     | 320            |
-| MRT Driverless 3rd Rail              | 240     | 30    | 360     | 320            |
-| MRT Driverless 3rd Rail 5-door       | 240     | 30    | 360     | 320            |
-| MRT Driverless Overhead Power        | 240     | 30    | 370     | 320            |
-| MRT Driverless Overhead Power 5-door | 240     | 30    | 370     | 320            |
-| MRT Small                            | 190     | 25    | 280     | 260            |
-| LRT                                  | 150     | 15    | 200     | 160            |
+| Name                           | Train/h | Car/h | track/m | station/yr (k) |
+| ------------------------------ | ------- | ----- | ------- | -------------- |
+| MRT Classic 3rd Rail           | 270     | 30    | 360     | 320            |
+| MRT Driverless 3rd Rail        | 240     | 30    | 360     | 320            |
+| MRT Driverless 3rd Rail 5-door | 240     | 30    | 360     | 320            |
+| MRT Driverless OH              | 240     | 30    | 370     | 320            |
+| MRT Driverless OH 5-door       | 240     | 30    | 370     | 320            |
+| MRT Small                      | 190     | 22    | 280     | 260            |
+| LRT                            | 150     | 15    | 200     | 160            |
 
 All costs are guesstimated, very roughly balanced based on the vanilla trains.
 
