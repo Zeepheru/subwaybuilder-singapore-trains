@@ -1,0 +1,21 @@
+{
+  "id": "singapore-trains",
+  "name": "Singapore Train Pack",
+  "description": "MRT/LRT trains and tracks from Singapore.\n[BETA] Compatible with running on different tracks, including vanilla tracks.",
+  "version": "v0.1.0",
+  "author": {
+    "name": "Zeepheru",
+    "url": "https://github.com/zeepheru"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "TODO_repository": {
+    "type": "git",
+    "url": "https://github.com/MaxCheng95/MTR-Trains-for-Subway-Builder"
+  },
+  "keywords": ["subway-builder", "mod"],
+  "subwayBuilderVersion": ">=1.7.0",
+  "dependencies": {
+    "subway-builder": ">=1.7.0"
+  }
+}
