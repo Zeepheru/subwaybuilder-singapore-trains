@@ -27,7 +27,7 @@ Main train/track types
 
 Except for _MRT Light_ and _LRT APM_, the default trains have 4 doors per side, with 5-door variants for the driverless trains.
 
-For all trains, most properties that are accepted by Subway Builder's [train type modding API (Beta)](https://www.subwaybuilder.com/docs/beta/api-reference/trains) are included. These include features that are **not currently used** in the stable version of the game, like track cant, train car door count, seat count, visually rendered catenary, etc. _Not include however, are the features that concern trains running between different track as part of their normal schedule (station compatibility, per-track operational costs), track conversions, and acceleration curves._
+For all trains, most properties that are accepted by Subway Builder's [train type modding API (Beta)](https://www.subwaybuilder.com/docs/beta/api-reference/trains) are included. These include features that are **not currently used** in the stable version of the game, like track cant, train car door count, seat count, visually rendered catenary, etc. _Not included however, are the features that concern trains running between different track as part of their normal schedule (station compatibility, per-track operational costs), track conversions, and acceleration curves._
 
 | Ingame Name                          | id                   | Real-life lines                                                                                          |
 | ------------------------------------ | -------------------- | -------------------------------------------------------------------------------------------------------- |
