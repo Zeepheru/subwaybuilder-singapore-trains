@@ -4,9 +4,11 @@
 > While the mod is fully supported in the current stable version of Subway Builder,
 > certain features included in this mod are only found in the **Beta build** of the game.
 
-This train pack includes the following trains/tracks: 5 heavy metro types, 1 light metro type and 1 'light rail'. The trains and tracks
-are closely based off their real life Singapore counterparts, albeit with abstracted names and specifications, so you can still
-use them for any city if you so desire.
+![Mod cover image](images/mod_cover.png)
+
+This train pack contains a set of 7 generic-ish trains/tracks based on the Singapore MRT/LRT.
+It includes: 5 heavy metro types, 1 light metro type and 1 "light rail" people mover.
+**Generic names** are used in place of actual rolling stock names, so you can use them for any city if you so desire.
 
 ## Overview
 
@@ -16,16 +18,16 @@ Main train/track types
 - **MRT Driverless 3rd Rail (SIN)**: _Modern driverless metro train._
 - **MRT Driverless OH (SIN)**: _Modern driverless metro train using overhead power._
 - **MRT Light (SIN)**: _Smaller-profile driverless metro train designed for the tight curves of an elevated rail network._
-- **LRT (SIN)**: _Rubber-tired automated people mover meant for local connectivity in dense residential estates._
+- **LRT APM (SIN)**: _Rubber-tired automated people mover meant for local connectivity in dense residential estates._
 
 5-door variants
 
 - **MRT Driverless 3rd Rail, 5-door (SIN)**: _Modern driverless metro train, 5-door variant._
 - **MRT Driverless OH, 5-door (SIN)**: _Modern driverless metro train using overhead power, 5-door variant._
 
-Except for _MRT Light_ and _LRT_, the default trains are have 4 doors per side, with 5-door variants for the driverless trains (as found in Singapore).
+Except for _MRT Light_ and _LRT APM_, the default trains have 4 doors per side, with 5-door variants for the driverless trains.
 
-For all trains, most properties that are accepted by Subway Builder's [train type modding API (Beta)](https://www.subwaybuilder.com/docs/beta/api-reference/trains) are included. These include features that are **not currently used** in the stable version of the game, like track cant, train car doors, numbers of seats, visually rendered catenary, etc. _Not include however, are the features that concern trains running between different track as part of their normal schedule (station compatibility, per-track operational costs), track conversions, and acceleration curves._
+For all trains, most properties that are accepted by Subway Builder's [train type modding API (Beta)](https://www.subwaybuilder.com/docs/beta/api-reference/trains) are included. These include features that are **not currently used** in the stable version of the game, like track cant, train car door count, seat count, visually rendered catenary, etc. _Not include however, are the features that concern trains running between different track as part of their normal schedule (station compatibility, per-track operational costs), track conversions, and acceleration curves._
 
 | Ingame Name                          | id                   | Real-life lines                                                                                          |
 | ------------------------------------ | -------------------- | -------------------------------------------------------------------------------------------------------- |
@@ -35,7 +37,7 @@ For all trains, most properties that are accepted by Subway Builder's [train typ
 | MRT Driverless OH (SIN)              | `sin-mrt-oh`         | ![NEL](./images/icons/NEL.png)                                                                           |
 | MRT Driverless OH 5-door (SIN)       | `sin-mrt-oh-5d`      | ![CRL](./images/icons/CRL.png)                                                                           |
 | MRT Small (SIN)                      | `sim-mrt-small`      | ![JRL](./images/icons/JRL.png)                                                                           |
-| LRT (SIN)                            | `sin-lrt`            | ![BPLRT](./images/icons/BPLRT.png) ![SKLRT](./images/icons/SKLRT.png) ![PGLRT](./images/icons/PGLRT.png) |
+| LRT APM (SIN)                        | `sin-lrt`            | ![BPLRT](./images/icons/BPLRT.png) ![SKLRT](./images/icons/SKLRT.png) ![PGLRT](./images/icons/PGLRT.png) |
 
 ## Detailed Information
 
@@ -49,7 +51,7 @@ For all trains, most properties that are accepted by Subway Builder's [train typ
 | MRT Driverless OH              | `sin-mrt-oh`         | `heavy-metro`            | `sin-mrt-oh-5d`      |
 | MRT Driverless OH 5-door       | `sin-mrt-oh-5d`      | `heavy-metro`            | `sin-mrt-oh`         |
 | MRT Small                      | `sim-mrt-small`      | `light-metro`            |                      |
-| LRT                            | `sin-lrt`            | `light-rail`             |                      |
+| LRT APM                        | `sin-lrt`            | `light-rail`             |                      |
 
 This means that, should you be playing on a Beta build of the game, you can run the mod's trains on their corresponding
 vanilla trackage, and interrun selected pairs of modded trains.
@@ -59,14 +61,14 @@ modded trains on it.
 
 Notes on **vanilla** track compatibility:
 
-- The majority of Singapore MRT lines, with large, roughly standard-sized 23 x 3.2 m train cars, are considered
+- The majority of Singapore MRT lines, with large, roughly standard-sized 23 x 3.2 m train cars, are considered by the mod to be
   `heavy-metro`. This includes the 3-car lines (CCL, DTL) that are often referred to as "light metro" or medium-capacity
   metros. IMO they are built to heavy metro standards, just with shorter trains more appropriate to their forecasted
-  ridership.
+  ridership. _(Not that 3-car trains on the CCL are remotely sufficient for its current ridership)_
   - This however, does becomes a problem with platform lengths, as the 98 m minimum `heavy-metro` platform length is longer
-    than the 70 m platforms used by these lines. In my view however, it is an acceptable tradeoff.
+    than the ~70 m platforms used by these lines. In my view however, it is an acceptable tradeoff.
 - The reference for _MRT Small_, the JRL, with its smaller 18.6 x 2.75 m train cars, is much closer to the `light-metro` as envisioned in Subway Builder.
-- The _LRT_ lines are compatible with `light-rail`. While far from a perfect fit, it's most adequate to portray the lower
+- The _LRT APM_ lines are compatible with `light-rail`. While far from a perfect fit, it's most adequate to portray the lower
   initial construction costs that have been the rationales for the construction of these lines in real life.
 
 Notes on **mod** track compatibility:
@@ -80,9 +82,9 @@ Notes on **mod** track compatibility:
 | ---------------------- | ------------------ | ------------------ | ------------------- |
 | MRT Classic/Driverless | 3                  | 8                  | 3, 4, 6, 8 (design) |
 | MRT Small              | 3                  | 8                  | 3, 4 (design)       |
-| LRT                    | 1                  | 4                  | 1, 2                |
+| LRT APM                | 1                  | 4                  | 1, 2                |
 
-Apart from the built infrastructure, there technically isn't a reason for any of these to be limited. Normal MRTs are set 3 to 8 based on the shortest (CCL/DTL) and longest (CRL design) trains that have been intended for use, applied to all trains to allow for player freedom. Maximum lengths for _MRT Small_ and _LRT_ are set to double their real-life maximum lengths.
+Apart from the built infrastructure, there technically isn't a reason for any of these to be limited. Normal MRTs are set 3 to 8 based on the shortest (CCL/DTL) and longest (CRL design) trains that have been intended for use, applied to all trains to allow for player freedom. Maximum lengths for _MRT Small_ and _LRT APM_ are set to double their real-life maximum lengths.
 
 ### Train Cars
 
@@ -94,11 +96,11 @@ Apart from the built infrastructure, there technically isn't a reason for any of
 | MRT Driverless OH              | 23 x 3.2       | 4          | 320      | 46    |
 | MRT Driverless OH 5-door       | 23 x 3.2       | 5          | 320      | 40    |
 | MRT Small                      | 18.6 x 2.75    | 3          | 150      | 32    |
-| LRT [a]                        | 11.8 x 2.69    | 2          | 105      | 18    |
+| LRT APM [a]                    | 11.8 x 2.69    | 2          | 105      | 18    |
 
 Notes:
 
-- [a]: _LRT_ trains are referenced off the C810 family of LRT trains from the Sengkang/Punggol LRT. BPLRT trains are
+- [a]: _LRT APM_ trains are referenced off the C810 family of LRT trains from the Sengkang/Punggol LRT. BPLRT trains are
   sufficiently similar such that a differentiation is not too necessary.
 
 Notes on Seat Count:
@@ -107,7 +109,7 @@ Notes on Seat Count:
 - _MRT Driverless_: 46 is a middle ground between trains with some standing-only areas and those with all setas.
 - _MRT Driverless (5-door)_: 40 is rounded up from T251 per-car average, rougly similar to estimations of CR151 based on preview interior images.
 - _MRT Small_: 32 is estimated from JRL preview interior images.
-- _LRT_: 18 seats as found on C810D.
+- _LRT APM_: 18 seats as found on C810D.
 
 Notes on Passenger Capacity:
 
@@ -123,19 +125,19 @@ Notes on Passenger Capacity:
   [Wikipedia](https://en.wikipedia.org/wiki/Hyundai_Rotem_J151), where it is uncited...?
   - A more authoritative (but less precise) source is a [Straits Times Article](https://web.archive.org/web/20180511192936/https://www.straitstimes.com/singapore/transport/smaller-train-cars-for-jurong-region-line-to-navigate-tight-curves-in-built-up) from 2018, where each car is reported
     to carry up to 150-200 passengers.
-- _LRT_: 105 passengers is consistent for both Bukit Panjang (see [1996 Straits Times Article](https://eresources.nlb.gov.sg/newspapers/digitised/article/straitstimes19960413-1.2.2)) and Sengkang/Punggol (see Mitsubishi source below) LRT Networks.
+- _LRT APM_: 105 passengers is consistent for both Bukit Panjang (see [1996 Straits Times Article](https://eresources.nlb.gov.sg/newspapers/digitised/article/straitstimes19960413-1.2.2)) and Sengkang/Punggol (see Mitsubishi source below) LRT Networks.
 
 ### Performance
 
 | Name                           | Max Speed (kph) | Station Speed (kph) | Crossover Speed (kph) | Yard Speed (kph) |
 | ------------------------------ | --------------- | ------------------- | --------------------- | ---------------- |
-| MRT Classic 3rd Rail           | 70              | 70                  | 25                    | 15               |
+| MRT Classic 3rd Rail           | 80              | 80                  | 25                    | 15               |
 | MRT Driverless 3rd Rail        | 80              | 80                  | 25                    | 15               |
 | MRT Driverless 3rd Rail 5-door | 80 [b]          | 80                  | 25                    | 15               |
 | MRT Driverless OH              | 90              | 90                  | 25                    | 15               |
 | MRT Driverless OH 5-door       | 90              | 90                  | 25                    | 15               |
 | MRT Small                      | 70              | 70                  | 25                    | 15               |
-| LRT                            | 70              | 40                  | 25                    | 15               |
+| LRT APM                        | 70              | 40                  | 25                    | 15               |
 
 Notes:
 
@@ -148,7 +150,7 @@ Notes:
 | MRT Classic    | 1.1                     | 1.2                     | 1.0                             |
 | MRT Driverless | 1.2                     | 1.3                     | 1.0                             |
 | MRT Small      | 1.2                     | 1.3                     | 1.0                             |
-| LRT            | 1.0                     | 1.0                     | 1.0                             |
+| LRT APM        | 1.0                     | 1.0                     | 1.0                             |
 
 | Name                           | Stop Time (s) | Turnaround Time (s) | TPH Limit |
 | ------------------------------ | ------------- | ------------------- | --------- |
@@ -158,13 +160,13 @@ Notes:
 | MRT Driverless OH              | 30            | 60                  | 40        |
 | MRT Driverless OH 5-door       | 30            | 60                  | 40        |
 | MRT Small                      | 30            | 60                  | 40        |
-| LRT                            | 30            | 60                  | 30        |
+| LRT APM                        | 30            | 60                  | 30        |
 
 Notes on TPH limit:
 
 - _MRT Classic_: headway has been upgraded from 120 to 100 seconds with installation of Seltrac CBTC ([LandTransportGuru](https://landtransportguru.net/cbtc-implementation-review/))
 - _MRT Driverless/Small_: 90 second min headway has been around since the NEL in the early 2000s (see Alstom doc below), uncertain if any newer line has better capabilities.
-- _LRT_: guesstimation. Not likely to be high, with the SK/PGLRT still using fixed-block signalling; though the BPLRT does (soon, 2026) have CBTC.
+- _LRT APM_: guesstimation. Not likely to be high, with the SK/PGLRT still using fixed-block signalling; though the BPLRT does (soon, 2026) have CBTC.
 
 ### Track Parameters
 
@@ -175,14 +177,14 @@ Real-world _desirable_ maximums are in parentheses, for reference.
 | MRT Classic    | 3.5 (2.5)     | 150 (110-125) | 110 (90)                 | 190 (300)           | 400 (∞)                     |
 | MRT Driverless | 3.5 (2.5)     | 150 (110-125) | 110 (90)                 | 190 (300)           | 400 (∞)                     |
 | MRT Small      | 4.5           | 150           | 110                      | 150                 | 300                         |
-| LRT            | 6 (4)         | 210           | 125                      | 25 (100)            | 100 (∞)                     |
+| LRT APM        | 6 (4)         | 210           | 125                      | 25 (100)            | 100 (∞)                     |
 
 | Name           | Track Spacing (m) | Track Clearance (m) |
 | -------------- | ----------------- | ------------------- |
 | MRT Classic    | 3.8               | 1.2                 |
 | MRT Driverless | 3.8               | 1.2                 |
 | MRT Small      | 3.7               | 1.0                 |
-| LRT            | 3.2               | 0.9                 |
+| LRT APM        | 3.2               | 0.9                 |
 
 Two main sources are used for this section:
 
@@ -198,7 +200,7 @@ Notes:
 - Absolute design maximums are used, with the _desirable_ maximums (especially under certain conditions) typically lower.
 - Curved platforms are not desired (none are found on the real-life network).
 - _MRT Small_: No official values, estimated.
-- _LRT_ cant: only angles are mentioned in the guidelines due to the use of guideways for rubber-wheeled units. Here, Here, heights are calculated using those angles with standard gauge track (1435 mm).
+- _LRT APM_ cant: only angles are mentioned in the guidelines due to the use of guideways for rubber-wheeled units. Here, Here, heights are calculated using those angles with standard gauge track (1435 mm).
 - Track clearance & track spacing: estimated from Subway Builder values.
 
 ### Initial Costs
@@ -213,14 +215,14 @@ Notes:
 | MRT Driverless OH              | 3.1     | 32        | 70          | 16            |
 | MRT Driverless OH 5-door       | 3.2     | 32        | 70          | 16            |
 | MRT Small                      | 1.9     | 28        | 50          | 14            |
-| LRT                            | 1       | 20        | 15          | 5             |
+| LRT APM                        | 1       | 20        | 15          | 5             |
 
 All costs are guesstimated, very roughly balanced based on the vanilla trains.
 
 Notes:
 
 - No custom cost modifiers (for _elevated, ramp, at grade, cut and cover, etc._) are used.
-- Scissor crossover cost is deprecated in the Beta.
+- Scissor crossover cost is deprecated in the Beta game build.
 
 <img alt="Rolling Stock Procurement Contract Costs" src="./images/procurement_costs.png" height="250">
 
@@ -231,12 +233,12 @@ Looking at actual rolling stock procurement contracts is not very helpful.
 | Name                           | Train/h | Car/h | track/m | station/yr (k) |
 | ------------------------------ | ------- | ----- | ------- | -------------- |
 | MRT Classic 3rd Rail           | 270     | 30    | 360     | 320            |
-| MRT Driverless 3rd Rail        | 240     | 30    | 360     | 320            |
-| MRT Driverless 3rd Rail 5-door | 240     | 30    | 360     | 320            |
-| MRT Driverless OH              | 240     | 30    | 370     | 320            |
-| MRT Driverless OH 5-door       | 240     | 30    | 370     | 320            |
-| MRT Small                      | 190     | 22    | 280     | 260            |
-| LRT                            | 150     | 15    | 200     | 160            |
+| MRT Driverless 3rd Rail        | 230     | 30    | 360     | 320            |
+| MRT Driverless 3rd Rail 5-door | 230     | 30    | 360     | 320            |
+| MRT Driverless OH              | 230     | 30    | 370     | 320            |
+| MRT Driverless OH 5-door       | 230     | 30    | 370     | 320            |
+| MRT Small                      | 180     | 22    | 280     | 260            |
+| LRT APM                        | 140     | 15    | 200     | 160            |
 
 All costs are guesstimated, very roughly balanced based on the vanilla trains.
 

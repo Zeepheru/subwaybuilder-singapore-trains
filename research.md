@@ -33,7 +33,7 @@ Train cars:
 For legacy lines
 
 177,000 per train is the max aim, based on scaling up (by passenger count) the NYC heavy-metro trains.
-Though aiming for ~160k is probably best. Currently set to 300 + 6x25 = 164,250/hr
+Though aiming for ~160k is probably best. Currently set to 300 + 6x25 = 164,250/hr. This may change
 
 Track clearance is about 1.2-1.3m (though circular tunnels are wider), just gonna use the default (Singapore MRT: Design)
 
@@ -65,13 +65,3 @@ NEL Stock
 
 - NEL: 90 seconds (Alstom doc), same Urbalis 300 as CCL
 - NSEWL: 100 seconds ([LandTransportGuru](https://landtransportguru.net/train-cbtc/))
-
-## Todo
-
-- Convert README into tables
-- Maybe more modular code...?
-- DRAWING :))))
-
-More research
-
-- Signalling???
