@@ -3,3 +3,4 @@ scripts/*.csv
 sources
 index_old.js
 publish
+*.zip
