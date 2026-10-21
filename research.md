@@ -65,3 +65,9 @@ NEL Stock
 
 - NEL: 90 seconds (Alstom doc), same Urbalis 300 as CCL
 - NSEWL: 100 seconds ([LandTransportGuru](https://landtransportguru.net/train-cbtc/))
+
+## TODOS
+
+Reduce radius on driverless to about ~120 - because of Promenade
+
+Increase max TPH for the PG/SKLRT

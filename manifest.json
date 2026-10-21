@@ -1,6 +1,6 @@
 {
-  "id": "singapore-trains",
-  "name": "Singapore Train Pack",
+  "id": "singapore-simplified-trains",
+  "name": "Singapore Simplified Trains Pack",
   "description": "A set of 7 generic-ish metro trains based on the Singapore MRT/LRT.\n[BETA] Supports multi-track compatibility, including being able to run on vanilla tracks.",
   "version": "v1.0.0",
   "author": {
