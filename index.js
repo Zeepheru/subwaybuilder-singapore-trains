@@ -2,7 +2,7 @@
 window.SubwayBuilderAPI.trains.registerTrainType({
   "id":"sin-mrt-3r-classic",
   "name":"MRT Classic 3rd Rail (SIN)",
-  "description":"Metro train for an older network upgraded to modern standards, with CBTC, automated operation, and platform screen doors.",
+  "description":"Metro train for an older network upgraded to modern standards: with CBTC, automated operation, and platform screen doors.",
   "stats":{
     "minCars":3,
     "maxCars":8,

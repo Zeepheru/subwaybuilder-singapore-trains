@@ -58,23 +58,16 @@ All sources for specifications, where available, are found at the bottom.
 | MRT Small                      | `sim-mrt-small`      | `light-metro`            |                      |
 | LRT APM                        | `sin-lrt`            | `light-rail`             |                      |
 
-This means that, should you be playing on a Beta build of the game, you can run the mod's trains on their corresponding
-vanilla trackage, and interrun selected pairs of modded trains.
+This means that, should you be playing on a Beta build of the game, you can run the mod's trains on their corresponding vanilla trackage, and interrun selected pairs of modded trains.
 
-This can be useful if you have a network that was built using vanilla tracks, but wish to run
-modded trains on it.
+This can be useful if you have a network that was built using vanilla tracks, but wish to run modded trains on it.
 
 Notes on **vanilla** track compatibility:
 
-- The majority of Singapore MRT lines, with large, roughly standard-sized 23 x 3.2 m train cars, are considered by the mod to be
-  `heavy-metro`. This includes the 3-car lines (CCL, DTL) that are often referred to as "light metro" or medium-capacity
-  metros. IMO they are built to heavy metro standards, just with shorter trains more appropriate to their forecasted
-  ridership. _(Not that 3-car trains on the CCL are remotely sufficient for its current ridership)_
-  - This however, does becomes a problem with platform lengths, as the 98 m minimum `heavy-metro` platform length is longer
-    than the ~70 m platforms used by these lines. In my view however, it is an acceptable tradeoff.
+- The majority of Singapore MRT lines, with large, roughly standard-sized 23 x 3.2 m train cars, are considered by the mod to be `heavy-metro`. This includes the 3-car lines (CCL, DTL) that are often referred to as "light metro" or medium-capacity metros. IMO they are built to heavy metro standards, just with shorter trains more appropriate to their forecasted ridership. _(Not that 3-car trains on the CCL are remotely sufficient for its current ridership)_
+  - This however, does becomes a problem with platform lengths, as the 98 m minimum `heavy-metro` platform length is longer than the ~70 m platforms used by these lines. In my view however, it is an acceptable tradeoff.
 - The reference for _MRT Small_, the JRL, with its smaller 18.6 x 2.75 m train cars, is much closer to the `light-metro` as envisioned in Subway Builder.
-- The _LRT APM_ lines are compatible with `light-rail`. While far from a perfect fit, it's most adequate to portray the lower
-  initial construction costs that have been the rationales for the construction of these lines in real life.
+- The _LRT APM_ lines are compatible with `light-rail`. While far from a perfect fit, it's most adequate to portray the lower initial construction costs that have been the rationales for the construction of these lines in real life.
 
 Notes on **mod** track compatibility:
 
@@ -105,8 +98,7 @@ Apart from the built infrastructure, there technically isn't a reason for any of
 
 Notes:
 
-- [a]: _LRT APM_ trains are referenced off the C810 family of LRT trains from the Sengkang/Punggol LRT. BPLRT trains are
-  sufficiently similar such that a differentiation is not too necessary.
+- [a]: _LRT APM_ trains are referenced off the C810 family of LRT trains from the Sengkang/Punggol LRT. BPLRT trains are sufficiently similar such that a differentiation is not too necessary.
 
 Notes on Seat Count:
 
@@ -193,14 +185,13 @@ Two main sources are used for this section:
 
 - The LTA's _Civil Design Criteria_ from 2010: includes design guidelines for full-size MRT and LRT.
 - _Singapore Mass Rapid Transit System: Design_, a paper from 1989 covering the original NS/EWL:
-  - Curvature Radius: Desired maximum is 300 m, actual minimum mainline curvature is 275 m (only 3 curves on these original lines < 300 m),
-    with 190 m being the minimum in depots.
+  - Curvature Radius: Desired maximum is 300 m, actual minimum mainline curvature is 275 m (only 3 curves on these original lines < 300 m), with 190 m being the minimum in depots.
   - Gradients: Design maximum is 3%, with gradients above 1% restricted in length. Set to 3.5% for more player flexibility.
   - Cant: Absolute/desirable maximums are lower for ballasted track, at 125/110 mm.
 
 Notes:
 
-- [c]: Minimum radii is decreased significantly below standard minimums for _MRT Driverless_, to allow for the sharp turn out of Promenade station to be created.
+- [c]: Minimum radii is decreased significantly below standard minimums for _MRT Driverless_, to allow for the sharp turn out of Promenade station to be recreated.
 - Absolute design maximums are used, with the _desirable_ maximums (especially under certain conditions) typically lower.
 - Curved platforms are not desired (none are found on the real-life network).
 - _MRT Small_: No official values, estimated.
