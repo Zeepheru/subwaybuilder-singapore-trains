@@ -98,7 +98,7 @@ Apart from the built infrastructure, there technically isn't a reason for any of
 
 Notes:
 
-- [a]: _LRT APM_ trains are referenced off the C810 family of LRT trains from the Sengkang/Punggol LRT. BPLRT trains are sufficiently similar such that a differentiation is not too necessary.
+- a: _LRT APM_ trains are referenced off the C810 family of LRT trains from the Sengkang/Punggol LRT. BPLRT trains are sufficiently similar such that a differentiation is not too necessary.
 
 Notes on Seat Count:
 
@@ -136,7 +136,7 @@ Notes on Passenger Capacity:
 
 Notes:
 
-- [b]: While the T251 trains used on the TEL have a top operating speed of 90 km/h, they are limited in the mod to 80 km/h.
+- b: While the T251 trains used on the TEL have a top operating speed of 90 km/h, they are limited in the mod to 80 km/h.
   This is primarily to introduce _some gameplay differentiation_ between the 5-door 3rd rail and overhead line powered trains.
 - On lines with platform screen doors (all except _LRT APM_), the station passing speed limit is equal to maximum speed.
 
@@ -191,7 +191,7 @@ Two main sources are used for this section:
 
 Notes:
 
-- [c]: Minimum radii is decreased significantly below standard minimums for _MRT Driverless_, to allow for the sharp turn out of Promenade station to be recreated.
+- c: Minimum radii is decreased significantly below standard minimums for _MRT Driverless_, to allow for the sharp turn out of Promenade station to be recreated.
 - Absolute design maximums are used, with the _desirable_ maximums (especially under certain conditions) typically lower.
 - Curved platforms are not desired (none are found on the real-life network).
 - _MRT Small_: No official values, estimated.

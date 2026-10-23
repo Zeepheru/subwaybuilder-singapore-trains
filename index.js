@@ -361,7 +361,7 @@ window.SubwayBuilderAPI.trains.registerTrainType({
     "yardSpeedLimit":4.166666666666667,
     "stopTimeSeconds":30,
     "turnaroundTimeSeconds":60,
-    "tphLimit":30,
+    "tphLimit":40,
     "maxCantMm":210,
     "maxCantDeficiencyMm":125,
     "maxSlopePercentage":6,
