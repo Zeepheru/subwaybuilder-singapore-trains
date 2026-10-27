@@ -284,7 +284,7 @@ window.SubwayBuilderAPI.trains.registerTrainType({
   "maxOverpassSpan":50
 });
 window.SubwayBuilderAPI.trains.registerTrainType({
-  "id":"sim-mrt-small",
+  "id":"sin-mrt-small",
   "name":"MRT Small (SIN)",
   "description":"Smaller-profile driverless metro train designed for the tight curves of an elevated rail network.",
   "stats":{
@@ -325,7 +325,7 @@ window.SubwayBuilderAPI.trains.registerTrainType({
     "maxStationLength":153
   },
   "compatibleTrackTypes":[
-    "sim-mrt-small",
+    "sin-mrt-small",
     "light-metro"
   ],
   "appearance":{
